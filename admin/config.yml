@@ -1,0 +1,36 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: false
+
+media_folder: "images"
+public_folder: "/images"
+
+site_url: "https://mackbear-rize-menu.netlify.app"
+display_url: "https://mackbear-rize-menu.netlify.app"
+
+locale: "tr"
+
+collections:
+  - name: "menu"
+    label: "Menü Ürünleri"
+    label_singular: "Menü Ürünü"
+    files:
+      - label: "Ürün Listesi"
+        name: "products"
+        file: "data/products.yml"
+        fields:
+          - label: "Ürünler"
+            name: "products"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - { label: "Ürün Adı", name: "name", widget: "string" }
+              - { label: "Kategori Kodu", name: "category", widget: "select", options: ["kahve", "soguk", "frappe", "milkshake", "sicak"] }
+              - { label: "Kategori Yazısı", name: "categoryLabel", widget: "string" }
+              - { label: "Fiyat", name: "price", widget: "string", hint: "Örnek: ₺205 / ₺230 veya ₺110" }
+              - { label: "Rozet", name: "badge", widget: "string", required: false }
+              - { label: "Açıklama", name: "description", widget: "text" }
+              - { label: "Görsel", name: "image", widget: "image" }
+              - { label: "Stokta Var", name: "available", widget: "boolean", default: true }
