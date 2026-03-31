@@ -1,9 +1,73 @@
+const SHEET_CSV_URL =
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vQD2xxN7hnDc6uDKh1abYurB8sSw2Kb5CAuf-GG9AS-gXQQhciUsdParypSQ04lz3blPlh5f31HKG8g/pub?output=csv";
+
 const categoryButtons = document.querySelectorAll(".category-btn");
 const searchInput = document.getElementById("searchInput");
 const productGrid = document.getElementById("productGrid");
 
 let activeCategory = "all";
 let products = [];
+
+function parseCSVLine(line) {
+  const result = [];
+  let current = "";
+  let inQuotes = false;
+
+  for (let i = 0; i < line.length; i++) {
+    const char = line[i];
+    const nextChar = line[i + 1];
+
+    if (char === '"') {
+      if (inQuotes && nextChar === '"') {
+        current += '"';
+        i++;
+      } else {
+        inQuotes = !inQuotes;
+      }
+    } else if (char === "," && !inQuotes) {
+      result.push(current.trim());
+      current = "";
+    } else {
+      current += char;
+    }
+  }
+
+  result.push(current.trim());
+  return result;
+}
+
+function csvToProducts(csvText) {
+  const lines = csvText
+    .replace(/\r/g, "")
+    .split("\n")
+    .filter((line) => line.trim() !== "");
+
+  if (lines.length < 2) {
+    return [];
+  }
+
+  const headers = parseCSVLine(lines[0]).map((header) => header.trim());
+
+  return lines.slice(1).map((line) => {
+    const values = parseCSVLine(line);
+    const item = {};
+
+    headers.forEach((header, index) => {
+      item[header] = values[index] ? values[index].trim() : "";
+    });
+
+    return {
+      name: item.name || "",
+      category: item.category || "",
+      categoryLabel: item.categoryLabel || "",
+      price: item.price || "",
+      badge: item.badge || "",
+      description: item.description || "",
+      image: item.image || "",
+      available: String(item.available).toUpperCase() === "TRUE"
+    };
+  });
+}
 
 function renderProducts() {
   const searchText = searchInput.value.toLowerCase().trim();
@@ -53,16 +117,17 @@ function renderProducts() {
 
 async function loadProducts() {
   try {
-    const response = await fetch("data/products.json", { cache: "no-store" });
+    const response = await fetch(SHEET_CSV_URL, { cache: "no-store" });
 
     if (!response.ok) {
-      throw new Error("Ürün verisi alınamadı.");
+      throw new Error("Google Sheets verisi alınamadı.");
     }
 
-    const data = await response.json();
-    products = Array.isArray(data.products) ? data.products : [];
+    const csvText = await response.text();
+    products = csvToProducts(csvText);
     renderProducts();
   } catch (error) {
+    console.error("Menü verisi yüklenemedi:", error);
     productGrid.innerHTML = `
       <div class="card">
         <div class="card-content">
@@ -72,7 +137,6 @@ async function loadProducts() {
         </div>
       </div>
     `;
-    console.error(error);
   }
 }
 
