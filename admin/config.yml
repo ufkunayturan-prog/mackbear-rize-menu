@@ -19,7 +19,7 @@ collections:
     files:
       - label: "Ürün Listesi"
         name: "products"
-        file: "data/products.yml"
+        file: "data/products.json"
         fields:
           - label: "Ürünler"
             name: "products"
