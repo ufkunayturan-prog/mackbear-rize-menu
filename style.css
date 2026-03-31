@@ -365,4 +365,29 @@ img {
     flex-direction: column;
     align-items: flex-start;
   }
+}/* 🔥 KATEGORİ RENKLERİ */
+
+.card.kahve {
+  border-top: 5px solid #6f4e37;
+}
+
+.card.soguk {
+  border-top: 5px solid #3aa6b9;
+}
+
+.card.tatli {
+  border-top: 5px solid #e91e63;
+  background: linear-gradient(to bottom, #fff, #fff0f5);
+}
+
+.card.sicak {
+  border-top: 5px solid #ff9800;
+}
+
+.card.frappe {
+  border-top: 5px solid #9c27b0;
+}
+
+.card.milkshake {
+  border-top: 5px solid #ff4081;
 }
