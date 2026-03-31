@@ -196,6 +196,7 @@ img {
   overflow: hidden;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border-top: 5px solid #e7d9c9;
 }
 
 .card:hover {
@@ -304,6 +305,32 @@ img {
   opacity: 0.85;
 }
 
+/* Kategori renkleri */
+.card.kahve {
+  border-top-color: #6f4e37;
+}
+
+.card.soguk {
+  border-top-color: #3aa6b9;
+}
+
+.card.tatli {
+  border-top-color: #e91e63;
+  background: linear-gradient(to bottom, #ffffff, #fff0f5);
+}
+
+.card.sicak {
+  border-top-color: #ff9800;
+}
+
+.card.frappe {
+  border-top-color: #9c27b0;
+}
+
+.card.milkshake {
+  border-top-color: #ff4081;
+}
+
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -326,7 +353,7 @@ img {
   }
 
   .hero-logo {
-    width: 800px;
+    width: 220px;
   }
 }
 
@@ -365,29 +392,4 @@ img {
     flex-direction: column;
     align-items: flex-start;
   }
-}/* 🔥 KATEGORİ RENKLERİ */
-
-.card.kahve {
-  border-top: 5px solid #6f4e37;
-}
-
-.card.soguk {
-  border-top: 5px solid #3aa6b9;
-}
-
-.card.tatli {
-  border-top: 5px solid #e91e63;
-  background: linear-gradient(to bottom, #fff, #fff0f5);
-}
-
-.card.sicak {
-  border-top: 5px solid #ff9800;
-}
-
-.card.frappe {
-  border-top: 5px solid #9c27b0;
-}
-
-.card.milkshake {
-  border-top: 5px solid #ff4081;
 }
