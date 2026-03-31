@@ -84,7 +84,7 @@ function renderProducts() {
 
   if (filteredProducts.length === 0) {
     productGrid.innerHTML = `
-      <div class="card ${product.category}">
+      <div class="card">
         <div class="card-content">
           <span class="badge">Bilgi</span>
           <h3>Bu kategoride ürün yok</h3>
@@ -98,7 +98,7 @@ function renderProducts() {
   productGrid.innerHTML = filteredProducts
     .map(
       (product) => `
-        <div class="card">
+        <div class="card ${product.category}">
           <img src="${product.image}" alt="${product.name}">
           <div class="card-content">
             <span class="badge">${product.badge || "Ürün"}</span>
