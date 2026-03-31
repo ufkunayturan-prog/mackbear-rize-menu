@@ -1,0 +1,294 @@
+{
+  "products": [
+    {
+      "name": "Americano",
+      "category": "kahve",
+      "categoryLabel": "Sıcak Kahve",
+      "price": "₺180 / ₺200",
+      "badge": "Kahve",
+      "description": "Yoğun ve net kahve tadı.",
+      "image": "images/americano.png",
+      "available": true
+    },
+    {
+      "name": "Latte",
+      "category": "kahve",
+      "categoryLabel": "Sıcak Kahve",
+      "price": "₺205 / ₺230",
+      "badge": "Kahve",
+      "description": "Espresso ve süt dengesi.",
+      "image": "images/latte.jpeg",
+      "available": true
+    },
+    {
+      "name": "Mocha",
+      "category": "kahve",
+      "categoryLabel": "Sıcak Kahve",
+      "price": "₺240 / ₺260",
+      "badge": "Kahve",
+      "description": "Çikolatalı kahve lezzeti.",
+      "image": "images/mocha.jpg",
+      "available": true
+    },
+    {
+      "name": "White Mocha",
+      "category": "kahve",
+      "categoryLabel": "Sıcak Kahve",
+      "price": "₺240 / ₺260",
+      "badge": "Kahve",
+      "description": "Beyaz çikolatalı kahve lezzeti.",
+      "image": "images/white-mocha.jpg",
+      "available": true
+    },
+    {
+      "name": "Caramel Latte",
+      "category": "kahve",
+      "categoryLabel": "Sıcak Kahve",
+      "price": "₺240 / ₺260",
+      "badge": "Kahve",
+      "description": "Karamel aromalı latte.",
+      "image": "images/caramel-latte.jpg",
+      "available": true
+    },
+    {
+      "name": "Filter Coffee",
+      "category": "kahve",
+      "categoryLabel": "Sıcak Kahve",
+      "price": "₺160 / ₺180",
+      "badge": "Kahve",
+      "description": "Filtre kahve.",
+      "image": "images/filter.jpg",
+      "available": true
+    },
+    {
+      "name": "Flat White",
+      "category": "kahve",
+      "categoryLabel": "Sıcak Kahve",
+      "price": "₺215 / ₺250",
+      "badge": "Kahve",
+      "description": "Yoğun espresso, ince süt dokusu.",
+      "image": "images/flat-white.jpg",
+      "available": true
+    },
+    {
+      "name": "Cappuccino",
+      "category": "kahve",
+      "categoryLabel": "Sıcak Kahve",
+      "price": "₺205 / ₺230",
+      "badge": "Kahve",
+      "description": "Bol köpüklü cappuccino.",
+      "image": "images/cappuccino.jpg",
+      "available": true
+    },
+    {
+      "name": "Biscoff Latte",
+      "category": "kahve",
+      "categoryLabel": "Sıcak Kahve",
+      "price": "₺260 / ₺285",
+      "badge": "Özel",
+      "description": "Biscoff aromalı latte.",
+      "image": "images/biscoff-Latte.jpg",
+      "available": true
+    },
+    {
+      "name": "Oreo Latte",
+      "category": "kahve",
+      "categoryLabel": "Sıcak Kahve",
+      "price": "₺260 / ₺285",
+      "badge": "Özel",
+      "description": "Oreo aromalı latte.",
+      "image": "images/oreo-latte.png",
+      "available": true
+    },
+    {
+      "name": "Coffenut",
+      "category": "kahve",
+      "categoryLabel": "Sıcak Kahve",
+      "price": "₺260 / ₺285",
+      "badge": "Özel",
+      "description": "Kahve ve fındık aromalı içecek.",
+      "image": "images/coffenut.png",
+      "available": true
+    },
+    {
+      "name": "Turkish Coffee",
+      "category": "kahve",
+      "categoryLabel": "Sıcak Kahve",
+      "price": "₺110",
+      "badge": "Kahve",
+      "description": "Türk kahvesi.",
+      "image": "images/turkish-coffee.jpg",
+      "available": true
+    },
+    {
+      "name": "Iced Americano",
+      "category": "soguk",
+      "categoryLabel": "Soğuk Kahve",
+      "price": "₺180 / ₺200",
+      "badge": "Soğuk",
+      "description": "Soğuk americano.",
+      "image": "images/Iced-americano.jpg",
+      "available": true
+    },
+    {
+      "name": "Iced Latte",
+      "category": "soguk",
+      "categoryLabel": "Soğuk Kahve",
+      "price": "₺205 / ₺230",
+      "badge": "Soğuk",
+      "description": "Soğuk latte.",
+      "image": "images/Iced-latte.jpg",
+      "available": true
+    },
+    {
+      "name": "Iced Mocha",
+      "category": "soguk",
+      "categoryLabel": "Soğuk Kahve",
+      "price": "₺240 / ₺260",
+      "badge": "Soğuk",
+      "description": "Soğuk mocha.",
+      "image": "images/Iced-mocha.jpg",
+      "available": true
+    },
+    {
+      "name": "Iced White Mocha",
+      "category": "soguk",
+      "categoryLabel": "Soğuk Kahve",
+      "price": "₺240 / ₺260",
+      "badge": "Soğuk",
+      "description": "Soğuk white mocha.",
+      "image": "images/Iced-white-mocha.png",
+      "available": true
+    },
+    {
+      "name": "Iced Caramel Latte",
+      "category": "soguk",
+      "categoryLabel": "Soğuk Kahve",
+      "price": "₺240 / ₺260",
+      "badge": "Soğuk",
+      "description": "Soğuk caramel latte.",
+      "image": "images/Iced-caramel-latte.jpg",
+      "available": true
+    },
+    {
+      "name": "Iced Filter Coffee",
+      "category": "soguk",
+      "categoryLabel": "Soğuk Kahve",
+      "price": "₺160 / ₺180",
+      "badge": "Soğuk",
+      "description": "Soğuk filtre kahve.",
+      "image": "images/filter.jpg",
+      "available": true
+    },
+    {
+      "name": "Iced Biscoff Latte",
+      "category": "soguk",
+      "categoryLabel": "Soğuk Kahve",
+      "price": "₺260 / ₺285",
+      "badge": "Özel",
+      "description": "Soğuk biscoff latte.",
+      "image": "images/biscoff-Latte.jpg",
+      "available": true
+    },
+    {
+      "name": "Iced Oreo Latte",
+      "category": "soguk",
+      "categoryLabel": "Soğuk Kahve",
+      "price": "₺260 / ₺285",
+      "badge": "Özel",
+      "description": "Soğuk oreo latte.",
+      "image": "images/oreo-latte.png",
+      "available": true
+    },
+    {
+      "name": "Hot Chocolate",
+      "category": "sicak",
+      "categoryLabel": "Çay & Sıcak",
+      "price": "₺230 / ₺260",
+      "badge": "Sıcak",
+      "description": "Sıcak çikolata.",
+      "image": "images/mackbear-logo.png",
+      "available": true
+    },
+    {
+      "name": "Hot White Chocolate",
+      "category": "sicak",
+      "categoryLabel": "Çay & Sıcak",
+      "price": "₺230 / ₺260",
+      "badge": "Sıcak",
+      "description": "Beyaz sıcak çikolata.",
+      "image": "images/mackbear-logo.png",
+      "available": true
+    },
+    {
+      "name": "Salep",
+      "category": "sicak",
+      "categoryLabel": "Çay & Sıcak",
+      "price": "₺200 / ₺220",
+      "badge": "Sıcak",
+      "description": "Geleneksel salep.",
+      "image": "images/mackbear-logo.png",
+      "available": true
+    },
+    {
+      "name": "Black Tea",
+      "category": "sicak",
+      "categoryLabel": "Çay & Sıcak",
+      "price": "₺100",
+      "badge": "Çay",
+      "description": "Siyah çay.",
+      "image": "images/mackbear-logo.png",
+      "available": true
+    },
+    {
+      "name": "Apple Cinnamon",
+      "category": "sicak",
+      "categoryLabel": "Çay & Sıcak",
+      "price": "₺100",
+      "badge": "Çay",
+      "description": "Elma tarçın çayı.",
+      "image": "images/mackbear-logo.png",
+      "available": true
+    },
+    {
+      "name": "Stay Happy",
+      "category": "sicak",
+      "categoryLabel": "Çay & Sıcak",
+      "price": "₺100",
+      "badge": "Çay",
+      "description": "Bitki çayı.",
+      "image": "images/mackbear-logo.png",
+      "available": true
+    },
+    {
+      "name": "Winter Tea",
+      "category": "sicak",
+      "categoryLabel": "Çay & Sıcak",
+      "price": "₺155",
+      "badge": "Çay",
+      "description": "Kış çayı.",
+      "image": "images/mackbear-logo.png",
+      "available": true
+    },
+    {
+      "name": "Very Berry",
+      "category": "sicak",
+      "categoryLabel": "Çay & Sıcak",
+      "price": "₺155",
+      "badge": "Çay",
+      "description": "Berry aromalı çay.",
+      "image": "images/mackbear-logo.png",
+      "available": true
+    },
+    {
+      "name": "Jasmine Green Tea",
+      "category": "sicak",
+      "categoryLabel": "Çay & Sıcak",
+      "price": "₺155",
+      "badge": "Çay",
+      "description": "Yaseminli yeşil çay.",
+      "image": "images/mackbear-logo.png",
+      "available": true
+    }
+  ]
+}
