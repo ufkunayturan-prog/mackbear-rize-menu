@@ -84,7 +84,7 @@ function renderProducts() {
 
   if (filteredProducts.length === 0) {
     productGrid.innerHTML = `
-      <div class="card">
+      <div class="card ${product.category}">
         <div class="card-content">
           <span class="badge">Bilgi</span>
           <h3>Bu kategoride ürün yok</h3>
