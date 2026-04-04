@@ -20,8 +20,6 @@ img {
   display: block;
 }
 
-/* HERO */
-
 .hero {
   position: relative;
   min-height: 78vh;
@@ -98,8 +96,6 @@ img {
   transform: translateY(-2px);
 }
 
-/* INTRO + CONTACT */
-
 .intro-section,
 .contact-section {
   max-width: 1200px;
@@ -136,8 +132,6 @@ img {
 .contact-box a:hover {
   text-decoration: underline;
 }
-
-/* CATEGORY */
 
 .category-section {
   background-color: #ffffff;
@@ -181,8 +175,6 @@ img {
   color: white;
 }
 
-/* MENU */
-
 .menu-section {
   max-width: 1200px;
   margin: 0 auto;
@@ -217,8 +209,6 @@ img {
   outline: none;
   background-color: #ffffff;
 }
-
-/* PRODUCT GRID */
 
 .product-grid {
   display: grid;
@@ -290,8 +280,6 @@ img {
   color: #2a201b;
 }
 
-/* INFO */
-
 .info-section {
   max-width: 1200px;
   margin: 0 auto;
@@ -313,8 +301,6 @@ img {
   font-size: 20px;
 }
 
-/* FOOTER */
-
 .footer {
   text-align: center;
   padding: 20px;
@@ -328,8 +314,6 @@ img {
   font-size: 12px;
   opacity: 0.85;
 }
-
-/* KATEGORI RENKLERI */
 
 .card.kahve {
   border-top-color: #5a3e2b;
@@ -361,7 +345,10 @@ img {
   background: linear-gradient(to bottom, #ffffff, #ffe4ec);
 }
 
-/* ANIMATION */
+.card.refresh {
+  border-top-color: #20c997;
+  background: linear-gradient(to bottom, #ffffff, #e9fff7);
+}
 
 @keyframes fadeUp {
   from {
@@ -374,8 +361,6 @@ img {
     transform: translateY(0);
   }
 }
-
-/* RESPONSIVE */
 
 @media (max-width: 992px) {
   .product-grid {
